@@ -1,8 +1,8 @@
 # math - Yksinkertainen laskukirjasto
 
 Tämä on yksinkertainen JavaScript-kirjasto, joka tarjoaa peruslaskutoimituksia,  
-kuten yhteen-, vähennys-, kerto- ja jakolasku, sekä parillisuuden ja parittomuuden tarkistuksen.
- Kirjasto on suunniteltu käytettäväksi Node.js-ympäristössä.
+kuten yhteen-, vähennys-, kerto- ja jakolasku, sekä parillisuuden ja parittomuuden tarkistuksen.  
+Kirjasto on suunniteltu käytettäväksi Node.js-ympäristössä.
 
 ## Vaatimukset
 - Node.js (v24 tai uudempi)
