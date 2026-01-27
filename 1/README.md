@@ -27,7 +27,11 @@ Tämä on inline-koodia: `print("Hello, World!")`
 [Stailaus otsikko](#tekstin-stailaaminen)
 
 ## Kuvat
-![Esimerkkikuva](./LAB_logo.png)
+![Esimerkkikuva](./LAB_logo.png)  
+Kuva: "01 LAB ENG RGB" – LAB-ammattikorkeakoulu [^1].  
+Lisenssi: Creative Commons Attribution 4.0 International (CC BY 4.0)  
+https://creativecommons.org/licenses/by/4.0/  
+Kuvaa on skaalattu  
 
 ## Listat
 - Banaani
@@ -79,6 +83,7 @@ Tämä on varovainen huomautus.
 </details>
 
 ## Referenssit
-Referenssinä käytettiin Githubin Markdown ohjetta [^1].
+Referenssinä käytettiin Githubin Markdown ohjetta [^2].
 
-[^1]: [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+[^1]: [LAB kuvapankki](https://lut.pictures.fi/kuvat/LAB+Press+Images/LOGOS/LOGO+FOR+DISPLAYS/)
+[^2]: [Github Docs](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
