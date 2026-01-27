@@ -54,20 +54,20 @@ Tämä on inline-koodia: `print("Hello, World!")`
 - [ ] Tehtävä 3
 
 ## Huomautukset
-[!NOTE]
-Tämä on huomautus.
+>[!NOTE]
+>Tämä on huomautus.
 
-[!TIP]
-Tämä on vinkki.
+>[!TIP]
+>Tämä on vinkki.
 
-[!IMPORTANT]
-Tämä on tärkeä huomautus.
+>[!IMPORTANT]
+>Tämä on tärkeä huomautus.
 
-[!WARNING]
-Tämä on varoitus.
+>[!WARNING]
+>Tämä on varoitus.
 
-[!CAUTION]
-Tämä on varovainen huomautus.
+>[!CAUTION]
+>Tämä on varovainen huomautus.
 
 <!-- Tämä on kommentti, joka ei näy renderöidyssä Markdownissa -->
 
