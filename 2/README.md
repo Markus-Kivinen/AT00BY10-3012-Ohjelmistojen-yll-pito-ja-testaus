@@ -1,4 +1,4 @@
-# Math - Yksinkertainen laskukirjasto
+# math - Yksinkertainen laskukirjasto
 
 Tämä on yksinkertainen JavaScript-kirjasto, joka tarjoaa peruslaskutoimituksia,  
 kuten yhteen-, vähennys-, kerto- ja jakolasku, sekä parillisuuden ja parittomuuden tarkistuksen.
