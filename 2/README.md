@@ -54,14 +54,16 @@ Aloitetaan testit...
       ✔ Tulisi palauttaa true kun kutsutaan isEven(4)
       ✔ Tulisi palauttaa true kun kutsutaan isEven(-4)
       ✔ Tulisi palauttaa false kun kutsutaan isEven(5)
+      ✔ Tulisi heittää virhe kun kutsutaan isEven('4')
     isOdd funktio
       ✔ Tulisi palauttaa true kun kutsutaan isOdd(5)
       ✔ Tulisi palauttaa true kun kutsutaan isOdd(-5)
       ✔ Tulisi palauttaa false kun kutsutaan isOdd(4)
+      ✔ Tulisi heittää virhe kun kutsutaan isOdd('5')
 
 Testit suoritettu.
 
-  15 passing (9ms)
+  17 passing (9ms)
 ```
 
 ## Ominaisuudet

@@ -87,6 +87,14 @@ describe("Aritmetiikka testit", function () {
     it("Tulisi palauttaa false kun kutsutaan isEven(5)", function () {
       assert.equal(math.isEven(5), false);
     });
+
+    it("Tulisi heittää virhe kun kutsutaan isEven('4')", function () {
+      assert.throws(
+        () => math.isEven("4"),
+        Error,
+        "Parametrin tulee olla numero."
+      );
+    });
   });
 
   describe("isOdd funktio", function () {
@@ -100,6 +108,14 @@ describe("Aritmetiikka testit", function () {
 
     it("Tulisi palauttaa false kun kutsutaan isOdd(4)", function () {
       assert.equal(math.isOdd(4), false);
+    });
+
+    it("Tulisi heittää virhe kun kutsutaan isOdd('5')", function () {
+      assert.throws(
+        () => math.isOdd("5"),
+        Error,
+        "Parametrin tulee olla numero."
+      );
     });
   });
 });
