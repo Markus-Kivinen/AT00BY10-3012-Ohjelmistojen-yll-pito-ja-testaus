@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(Githubin) Markdown ominaisuuksien testaus</title>
+    <style>
+        :root {
+            --color-code-bg: #f4f4f4;
+            --color-note: #2196f3;
+            --color-note-bg: #e3f2fd;
+            --color-tip: #4caf50;
+            --color-tip-bg: #e8f5e9;
+            --color-important: #9c27b0;
+            --color-important-bg: #f3e5f5;
+            --color-warning: #ff9800;
+            --color-warning-bg: #fff3e0;
+            --color-caution: #f44336;
+            --color-caution-bg: #ffebee;
+        }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 20px auto; 
+               line-height: 1.6; padding: 0 20px; }
+        code { background-color: var(--color-code-bg); padding: 2px 4px; border-radius: 3px; }
+        pre { background-color: var(--color-code-bg); padding: 10px; border-radius: 5px; 
+              overflow-x: auto; }
+        blockquote { border-left: 4px solid #ccc; margin: 0; padding-left: 16px; 
+                     color: #666; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: var(--color-code-bg); }
+        .alert { padding: 10px; border-left: 4px solid; margin: 10px 0; }
+        .note { background-color: var(--color-note-bg); 
+                border-left-color: var(--color-note); }
+        .tip { background-color: var(--color-tip-bg); 
+               border-left-color: var(--color-tip); }
+        .important { background-color: var(--color-important-bg); 
+                     border-left-color: var(--color-important); }
+        .warning { background-color: var(--color-warning-bg); 
+                   border-left-color: var(--color-warning); }
+        .caution { background-color: var(--color-caution-bg); 
+                   border-left-color: var(--color-caution); }
+    </style>
+</head>
+<body>
+    <h1>(Githubin) Markdown ominaisuuksien testaus</h1>
+
+    <h2 id="tekstin-stailaaminen">Tekstin stailaaminen</h2>
+    <p><strong>Tämä teksti on lihavoitu</strong><br>
+    <em>Tämä teksti on kursivoitu</em><br>
+    <del>Tämä teksti on yliviivattu</del><br>
+    Hello World<sub>Tämä teksti on alaindeksissä</sub><br>
+    Hello World<sup>Tämä teksti on yläindeksissä</sup><br>
+    <ins>Tämä teksti on alleviivattu</ins></p>
+
+    <h2>Lainaukset</h2>
+    <blockquote>
+        <p>Tämä on lainaus.</p>
+        <blockquote>
+            <p>Tämä on sisennetty lainaus.</p>
+        </blockquote>
+    </blockquote>
+
+    <h2>Koodilohkot</h2>
+    <pre><code>def hello_world():
+    print("Hello, World!")</code></pre>
+    <p>Tämä on inline-koodia: <code>print("Hello, World!")</code></p>
+
+    <h2>Linkit</h2>
+    <p><a href="https://www.google.com">Google</a><br>
+    <a href="#tekstin-stailaaminen">Stailaus otsikko</a></p>
+
+    <h2>Kuvat</h2>
+    <p><img src="./LAB_logo.png" alt="Esimerkkikuva"></p>
+
+    <h2>Listat</h2>
+    <ul>
+        <li>Banaani</li>
+        <li>Kynä
+            <ul>
+                <li>Ananas
+                    <ul>
+                        <li>Omena
+                            <ul>
+                                <li>Kynä</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Kirsikka</li>
+    </ul>
+
+    <ol>
+        <li>Ensimmäinen kohta</li>
+        <li>Toinen kohta</li>
+        <li>Kolmas kohta</li>
+    </ol>
+
+    <h2>Taulukot</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nimi</th>
+                <th>Ikä</th>
+                <th>Kaupunki</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Make</td>
+                <td>33</td>
+                <td>Imatra</td>
+            </tr>
+            <tr>
+                <td>Maija</td>
+                <td>25</td>
+                <td>Espoo</td>
+            </tr>
+            <tr>
+                <td>Pekka</td>
+                <td>28</td>
+                <td>Vantaa</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Todo lista</h2>
+    <ul style="list-style: none; padding-left: 0;">
+        <li><input type="checkbox" checked disabled> Tehtävä 1</li>
+        <li><input type="checkbox" disabled> Tehtävä 2</li>
+        <li><input type="checkbox" disabled> Tehtävä 3</li>
+    </ul>
+
+    <h2>Huomautukset</h2>
+    <div class="alert note">
+        <strong>NOTE</strong><br>
+        Tämä on huomautus.
+    </div>
+
+    <div class="alert tip">
+        <strong>TIP</strong><br>
+        Tämä on vinkki.
+    </div>
+
+    <div class="alert important">
+        <strong>IMPORTANT</strong><br>
+        Tämä on tärkeä huomautus.
+    </div>
+
+    <div class="alert warning">
+        <strong>WARNING</strong><br>
+        Tämä on varoitus.
+    </div>
+
+    <div class="alert caution">
+        <strong>CAUTION</strong><br>
+        Tämä on varovainen huomautus.
+    </div>
+
+    <!-- Tämä on kommentti, joka ei näy renderöidyssä Markdownissa -->
+
+    <h2>Referenssit</h2>
+    <p>Referenssinä käytettiin Githubin Markdown ohjetta <sup><a href="#fn1" 
+    id="ref1">[1]</a></sup>.</p>
+
+    <hr>
+    <ol>
+        <li id="fn1"><a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Github Docs</a> <a href="#ref1">↩</a></li>
+    </ol>
+</body>
+</html>
