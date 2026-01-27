@@ -73,4 +73,4 @@ Testit suoritettu.
 - Parittomuuden tarkistus
 
 ## Lisenssi
-Tämä projekti on lisensoitu MIT-lisenssillä. Katso lisätietoja LICENSE-tiedostosta.
+Tämä projekti on lisensoitu MIT-lisenssillä. Katso lisätietoja juurikansion LICENSE-tiedostosta.
