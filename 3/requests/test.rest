@@ -1,0 +1,141 @@
+### RGB -> heksa
+POST http://localhost:3000/api/toHex 
+Content-Type: application/json
+
+{
+  "r": 255,
+  "g": 99,
+  "b": 71
+}
+
+### RGB  -> heksa
+POST http://localhost:3000/api/toHex 
+Content-Type: application/json
+
+{
+  "r": "255",
+  "g": "99",
+  "b": "71"
+}
+
+### RGB  -> heksa
+POST http://localhost:3000/api/toHex 
+Content-Type: application/json
+
+[255, 99, 71]
+
+### RGB  -> heksa
+POST http://localhost:3000/api/toHex 
+Content-Type: application/json
+
+["255", "99", "71"]
+
+### RGB -> heksa (taulukko)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "rgb": [255, 99, 71]
+}
+
+### RGB -> heksa (taulukko)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "rgb": ["255", "99", "71"]
+}
+
+### RGB -> heksa (erotettu merkkijono)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "rgb": "255,99,71"
+}
+
+### RGB -> heksa (merkkijono)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "rgb": "255099071"
+}
+
+### RGB -> heksa (numero)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "rgb": 255099071
+}
+
+### Heksa -> RGB
+POST http://localhost:3000/api/toRGB
+Content-Type: application/json
+
+{
+  "hex": "#FF6347"
+}
+
+### Heksa -> RGB (lyhyt muoto)
+POST http://localhost:3000/api/toRGB
+Content-Type: application/json
+
+{
+  "hex": "#FFF"
+}
+
+### Heksa -> RGB (ilman #)
+POST http://localhost:3000/api/toRGB
+Content-Type: application/json
+
+{
+  "hex": "FFF"
+}
+
+### RGB -> heksa (virheellinen pyyntö)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "r": 255,
+  "g": -5,
+  "b": 255
+}
+
+### RGB -> heksa (virheellinen pyyntö)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "r": 255,
+  "g": 256,
+  "b": 255
+}
+
+### RGB -> heksa (virheellinen pyyntö)
+POST http://localhost:3000/api/toHex
+Content-Type: application/json
+
+{
+  "r": 255,
+  "b": 255
+}
+
+### Heksa -> RGB (virheellinen pyyntö)
+POST http://localhost:3000/api/toRGB
+Content-Type: application/json
+
+{
+  "hex": "ZZZZZZ"
+}
+
+### Heksa -> RGB (virheellinen pyyntö)
+POST http://localhost:3000/api/toRGB
+Content-Type: application/json
+
+{
+  "hex": "#FFFFFFF"
+}
+

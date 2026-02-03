@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hex ⇄ RGB Muunnin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 HEX ⇄ RGB Muunnin</h1>
+        
+
+        <form id="rgbToHexForm">
+            <h2>RGB → Hex</h2>
+            <div class="form-group">
+                <label for="r">Punainen (0-255):</label>
+                <input type="number" id="r" min="0" max="255" required>
+            </div>
+            <div class="form-group">
+                <label for="g">Vihreä (0-255):</label>
+                <input type="number" id="g" min="0" max="255" required>
+            </div>
+            <div class="form-group">
+                <label for="b">Sininen (0-255):</label>
+                <input type="number" id="b" min="0" max="255" required>
+            </div>
+            <button type="submit">Muunna Hex-väriksi</button>
+            <div id="hexResult" class="result"></div>
+            <div id="hexPreview" class="color-preview" style="display:none;"></div>
+        </form>
+
+        <div class="divider">━━━━━━━━━━━━━━━━━━━━</div>
+
+
+        <form id="hexToRgbForm">
+            <h2>Hex → RGB</h2>
+            <div class="form-group">
+                <label for="hex">Hex väri</label>
+                <input type="text" id="hex" placeholder="#FF6347" required>
+            </div>
+            <button type="submit">Muunna RGB-väriksi</button>
+            <div id="rgbResult" class="result"></div>
+            <div id="rgbPreview" class="color-preview" style="display:none;"></div>
+        </form>
+    </div>
+</body>
+</html>
