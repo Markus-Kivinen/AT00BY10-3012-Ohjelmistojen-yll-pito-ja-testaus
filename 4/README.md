@@ -84,7 +84,8 @@ Ei havaittavissa mitään merkittäviä blockaavia elementtejä tallennetusta da
 
 ## Käytetty teknologia
 - Python
-- Selenium WebDriver
+- Selenium
+- WebDriver Manager
 - pytest
 
 ## Testitapaukset
