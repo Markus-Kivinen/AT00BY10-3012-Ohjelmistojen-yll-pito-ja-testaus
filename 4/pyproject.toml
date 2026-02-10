@@ -1,0 +1,82 @@
+[project]
+name = "UI-testit"
+version = "0.1.0"
+authors = [
+  {name = "Markus Kivinen", email = "markus.kivinen@student.lab.fi"}
+]
+readme = "README.md"
+license = {text = "MIT"}
+dependencies = [
+  "selenium>=4.40.0",
+  "webdriver-manager>=4.0.2",
+  "pytest>=9.0.2",
+]
+requires-python = ">=3.13"
+
+[project.urls]
+Homepage = "https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/4"
+
+[tool.uv]
+package = true
+
+[project.scripts]
+test = "pytest:console_main"
+
+# ###################################################################
+# basedpyright options:
+# ###################################################################
+
+[tool.basedpyright]
+ignore = ["**/typings", "tests"]  # pytest tyypittäminen aika mahdotonta
+exclude = [".*", "__*", "**/typings"]
+
+reportMissingModuleSource = "none"
+reportUnknownMemberType = "none"
+reportUnusedCallResult = "none"
+reportUnusedParameter = "none"
+reportUnknownVariableType = "none"
+reportUnannotatedClassAttribute = "none"
+reportMissingTypeStubs = "none"
+reportAny = "none"
+reportImplicitStringConcatenation = "none"
+
+# ###################################################################
+# ruff options:
+# ###################################################################
+
+[tool.ruff.lint]
+select = ["ALL"]
+ignore = [
+  "T201",  # print statement found.
+  "INP001",  # missing __init__ file
+  "S104",  # Hardcoded binding to IP address
+  "ARG001",  # Unused arguments
+  "FBT003",  # Undocumented public class definition
+  "D107",  # Missing docstring in __init__
+  "D100",  # Missing docstring in public module
+  "D101",  # Missing docstring in class
+  "D102",  # Missing docstring in public function
+  "D103",  # Missing docstring in public method
+  "D104",  # Missing docstring in public package
+  "COM812",  # Missing trailing comma
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = [
+  "S101",  # Use of assert detected. The enclosed code will be removed when compiling to optimized bytecode.
+  "ANN001",  # Missing type annotation for function argument
+  "ANN201",  # Missing return type annotation for public function
+  "E722",  # Do not use bare `except`
+]
+
+[tool.ruff]
+line-length = 120
+#extend-exclude = ["tests"]  # pytest tyypittäminen aika mahdotonta
+
+# ###################################################################
+# pytest options:
+# ###################################################################
+
+[tool.pytest]
+testpaths = ["tests"]
+addopts = ["-s", "-v"]
