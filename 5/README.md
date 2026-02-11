@@ -5,7 +5,11 @@
 ![alt text](img/image.png)
 ![  ](img/image-1.png)
 
-## Testitapaukset
+## Testit
+Sivusto toimii mobiili sekä PC resoluutioilla.  
+Syötteet mahtuvat kenttiin, eikä tekstiä leikkaannu.  
+Kenttien labeleitä pystyy kääntämään muille kielille, eikä teksti leikkaannu.  
+
 1. RGB -> Hex
 2. Hex -> RGB
 3. Liian korkea ja matala RGB-arvo
@@ -17,11 +21,9 @@
 9. Tyhjä RGB-syöte
 10. Tyhjä Hex-syöte
 
-Backendi hyväksyy RGB/Hex syötteitä muissakin muodoissa, mutta frontissa ei ole keinoja syöttää näitä muotoja.
+(Backendi hyväksyy RGB/Hex syötteitä muissakin muodoissa, mutta frontissa ei ole keinoja syöttää näitä muotoja.)
 
-## Odotetut tulokset
-
-### Muunnokset  
+## Testitulokset  
 | Testi | RGB-syöte | Hex-syöte | Odotettu tulos | Testitulos |
 |--|:-:|:-:|:-:|:-:|
 |#1| RGB (255, 0, 0) | | #ff0000 | PASS |
@@ -35,12 +37,6 @@ Backendi hyväksyy RGB/Hex syötteitä muissakin muodoissa, mutta frontissa ei o
 |#9| - | | Virheilmoitus | PASS |
 |#10| | - | Virheilmoitus | PASS |  
 
-### Visuaalisuus
-Sivusto toimii mobiili sekä PC resoluutioilla.  
-Syötteet mahtuvat kenttiin, eikä tekstiä leikkaannu.  
-Kenttien labeleitä pystyy kääntämään muille kielille, eikä teksti leikkaannu.  
-
-## Testitulokset
 HTML5:n input-typet rajoittavat syötteitä mukavasti, ja vain muutamat virheelliset syötteet pääsivät frontin validoinnin läpi. Backend käsitteli nämä virheelliset syötteet odotetusti, ja kaikki testitapaukset onnistuivat.  
 
 Tekstikentät ja labelit mahtuvat hyvin kenttiin, eikä teksti leikkaannu. Sivusto toimii hyvin sekä mobiili- että PC-resoluutioilla.
