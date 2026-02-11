@@ -21,6 +21,7 @@ Backendi hyväksyy RGB/Hex syötteitä muissakin muodoissa, mutta frontissa ei o
 
 ## Odotetut tulokset
 
+### Muunnokset  
 | Testi | RGB-syöte | Hex-syöte | Odotettu tulos | Testitulos |
 |--|:-:|:-:|:-:|:-:|
 |#1| RGB (255, 0, 0) | | #ff0000 | PASS |
@@ -34,12 +35,22 @@ Backendi hyväksyy RGB/Hex syötteitä muissakin muodoissa, mutta frontissa ei o
 |#9| - | | Virheilmoitus | PASS |
 |#10| | - | Virheilmoitus | PASS |  
 
+### Visuaalisuus
+Sivusto toimii mobiili sekä PC resoluutioilla.  
+Syötteet mahtuvat kenttiin, eikä tekstiä leikkaannu.  
+Kenttien labeleitä pystyy kääntämään muille kielille, eikä teksti leikkaannu.  
 
 ## Testitulokset
-HTML5:n input-typet rajoittavat syötteitä mukavasti, ja vain muutamat virheelliset syötteet pääsivät frontin validoinnin läpi. Backend käsitteli nämä virheelliset syötteet odotetusti, ja kaikki testitapaukset onnistuivat.
+HTML5:n input-typet rajoittavat syötteitä mukavasti, ja vain muutamat virheelliset syötteet pääsivät frontin validoinnin läpi. Backend käsitteli nämä virheelliset syötteet odotetusti, ja kaikki testitapaukset onnistuivat.  
+
+Tekstikentät ja labelit mahtuvat hyvin kenttiin, eikä teksti leikkaannu. Sivusto toimii hyvin sekä mobiili- että PC-resoluutioilla.
+![alt text](img/pituus.png)
+![alt text](img/mobiili.png)
+
 
 ### Testi1 & Testi2
-![Testi1](img/image-5.png)
+Esikatselu väri täsmäsi myös    
+![Testi1](img/image-5.png)  
 
 ### Testi3
 Virheilmoitus: "Please select a value that is no more than 255 / no less than 0", tarkka virheviesti riippuu selaimesta ja kielestä.  
