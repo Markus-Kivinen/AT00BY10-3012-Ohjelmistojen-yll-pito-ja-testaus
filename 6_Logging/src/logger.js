@@ -9,9 +9,9 @@ const logger = createLogger({
   level: "info",
   format: format.combine(format.timestamp(), format.json()),
   transports: [
-    // names are added to transports for easier identification in tests
     new transports.Console({ name: "console" }),
     new transports.File({
+      // names are added to transports for easier identification in tests
       name: "error",
       filename: "logs/error.log",
       level: "error",
