@@ -1,2 +1,3 @@
 .vscode
 linkki*
+.pytest_cache
