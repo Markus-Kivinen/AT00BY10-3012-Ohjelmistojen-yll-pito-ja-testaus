@@ -1,0 +1,32 @@
+{
+  "name": "logging",
+  "version": "1.0.0",
+  "description": "logging practice",
+  "homepage": "https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main#readme",
+  "bugs": {
+    "url": "https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus.git#main"
+  },
+  "license": "MIT",
+  "author": "Markus Kivinen",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test",
+    "lint": "npx eslint --ext .js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.2",
+    "globals": "^17.3.0",
+    "supertest": "^7.2.2"
+  }
+}

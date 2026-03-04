@@ -1,0 +1,8 @@
+### Read counter value from API
+GET http://localhost:3000/counter-read
+
+### Increase counter value by one
+GET http://localhost:3000/counter-increase
+
+### Reset counter value to zero
+GET http://localhost:3000/counter-reset

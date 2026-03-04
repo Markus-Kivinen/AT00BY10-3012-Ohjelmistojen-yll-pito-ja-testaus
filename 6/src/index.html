@@ -1,0 +1,15 @@
+<div id="c"></div>
+<button onclick="f('counter-increase')">+</button>
+<button onclick="f('counter-read')">R</button>
+<button onclick="f('counter-reset')">0</button>
+<script>
+  // Fetches the counter value from the API and updates the page
+  function f(a) {
+    fetch("/" + a)
+      .then((r) => r.json())
+      .then((d) => {
+        c.innerText = "Counter: " + d.count;
+      });
+  }
+  f("counter-read");
+</script>
