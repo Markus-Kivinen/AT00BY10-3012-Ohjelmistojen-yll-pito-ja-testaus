@@ -7,4 +7,4 @@
 [V - WEB GUI Testing](https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main/5)  
 [VI - Logging](https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main/6_Logging)  
 [VII - Versioning and Licensing](https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main/7_Versioning_and_Licensing)  
-VIII - Deployment 
+[VIII - Deployment](https://github.com/Markus-Kivinen/AT00BY10-3012-deployment)  
