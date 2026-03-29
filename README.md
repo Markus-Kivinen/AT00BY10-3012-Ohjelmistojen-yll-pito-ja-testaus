@@ -8,3 +8,8 @@
 [VI - Logging](https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main/6_Logging)  
 [VII - Versioning and Licensing](https://github.com/Markus-Kivinen/AT00BY10-3012-Ohjelmistojen-yll-pito-ja-testaus/tree/main/7_Versioning_and_Licensing)  
 [VIII - Deployment](https://github.com/Markus-Kivinen/AT00BY10-3012-deployment)  
+
+Huom, Osa8 on submoduuli, kloonataksesi myös sen, käytä komentoa:
+```bash
+git clone --recurse-submodules <repository-url>
+```
